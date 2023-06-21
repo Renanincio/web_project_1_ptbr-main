@@ -1,6 +1,11 @@
 body {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+}
+
+.tag-link{
+  color:blue;
+  text-decoration: none;
 }
 
 .page {
@@ -18,10 +23,9 @@ body {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #1f1f1f;
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  padding-bottom: 100px;
   /* background-image: url(/images/header-image.png);
   background-position: bottom right;
   background-size: 568px 568px;
@@ -30,21 +34,21 @@ body {
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
+/* .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: orange;
+  background-color: blue;
   position: absolute;
   top: 64px;
   right: 0;
-}
+} */
 
 .header-image {
   position: absolute;
   bottom: 0;
   right: 0;
   height: 568px;
-  width: 568;
+  width: 568px;
   z-index: 1;
 }
 
@@ -68,10 +72,11 @@ body {
 }
 
 .title {
-  color: white;
   margin-left: 64px;
   font-size: 102px;
   line-height: 96px;
+  max-width: 700px;
+  z-index: 2;
 }
 
 .subtitle {
@@ -79,16 +84,16 @@ body {
   bottom: 30px;
   left: 64px;
   width: 380px;
-  color: white;
   line-height: 25px;
   font-size: 18px;
+  width: 400px;
 }
 
 .description {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  margin-top: 100px;
   min-height: 100vh;
 }
 
@@ -98,18 +103,19 @@ body {
   width: 80%;
 }
 
-.two-columns__brief {
-  width: 175px;
-}
+/* .two-columns__brief {
+  padding-right: 20px;
+} */
 
 .two-columns__main-text {
-  width: 80%;
   min-width: 784px;
 }
 
 .brief-paragraph {
-  color: orange;
+  color: blue;
   line-height: 1.2;
+  margin-right: 20px;
+  width: 170px;
 }
 
 .main-text__paragraph {
@@ -122,7 +128,7 @@ body {
 }
 
 .digits {
-  padding-bottom: 100px;
+  margin-top: 100px;
   min-height: 100vh;
   text-align: center;
 }
@@ -131,7 +137,7 @@ body {
   width: 60%;
   margin: 0 auto 20px;
   line-height: 1.15;
-  font-size: 60px;
+  font-size: 42px;
   font-weight: bold;
 }
 
@@ -171,68 +177,90 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   min-height: 100vh;
-  padding-bottom: 90px;
+  margin-top: 100px;
   text-align: center;
-  background-color: #1f1f1f;
+  background-color: #f2f2f2;
 }
 
 .feynman-title {
   line-height: 1.15;
   font-size: 102px;
   font-weight: bold;
+  color: black;
 }
 
 .feynman-subtitle {
   line-height: 51px;
   font-size: 36px;
+  color: black;
 }
 
 .feynman-link {
   text-decoration: none;
   position: absolute;
-  color: orange;
+  color: blue;
   right: 48px;
   font-size: 36px;
   line-height: 51px;
 }
 
 .kaufman {
-  padding-bottom: 90px;
+  padding-top: 90px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #1f1f1f;
   overflow: hidden;
   min-height: 100vh;
 }
 
+.kaufman-table{
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.kaufman-cell{
+  width: 200px;
+  margin: 0;
+  z-index: 1;
+}
+
+.kaufman-triange_img{
+  position: absolute;
+  right: -124px;
+  z-index: 0;
+}
+
 .kaufman-title {
-  color: black;
+  color: white;
+  width: 90%;
+  font-size: 42px;
 }
 
 .kaufman-subtitle {
-  color: black;
+  color: white;
 }
 
 .kaufman-heading {
-  color: black;
+  color: white;
 }
 
 .kaufman-text {
-  color: black;
+  color: white;
 }
 
-.kaufman-image {
+/* .kaufman-image {
   width: 660px;
   height: 636px;
   position: absolute;
   right: -124px;
   top: 0;
-}
+} */
 
 .footer {
-  background-color: #f2f2f2;
-  margin: 0;
-  color: black;
-  padding-bottom: 40px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 0 40px;
 }
 
 .columns {
@@ -256,6 +284,10 @@ body {
 .social,
 .about {
   list-style: none;
+}
+
+.social-image {
+  margin-right: 5px;
 }
 
 .list-title {
