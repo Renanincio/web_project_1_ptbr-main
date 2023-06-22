@@ -80,12 +80,18 @@ body {
 }
 
 .subtitle {
-  position: absolute;
+  /* position: absolute;
   bottom: 30px;
-  left: 64px;
+  left: 64px; */
   line-height: 25px;
   font-size: 18px;
   width: 400px;
+}
+
+.header-text-content{
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
 }
 
 .description {
@@ -176,7 +182,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   min-height: 100vh;
-  margin-top: 100px;
+  padding-top: 100px;
   text-align: center;
   background-color: #f2f2f2;
 }
