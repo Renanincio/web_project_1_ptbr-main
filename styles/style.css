@@ -6,6 +6,11 @@ body {
 .tag-link{
   color:blue;
   text-decoration: none;
+  transition: ease-in .4s;
+}
+
+.tag-link:hover{
+  opacity: .6;
 }
 
 .page {
@@ -22,10 +27,11 @@ body {
 .header {
   height: 100vh;
   min-height: 600px;
-  max-height: 756px;
+  /* max-height: 756px; */
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
+  overflow: hidden;
   /* background-image: url(/images/header-image.png);
   background-position: bottom right;
   background-size: 568px 568px;
@@ -34,14 +40,15 @@ body {
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-/* .header__square-pic {
-  height: 568px;
-  width: 568px;
+.header__square-pic {
+  height: 468px;
+  width: 468px;
   background-color: blue;
   position: absolute;
   top: 64px;
   right: 0;
-} */
+  animation: rotation 9s infinite linear;
+}
 
 .header-image {
   position: absolute;
@@ -49,7 +56,7 @@ body {
   right: 0;
   height: 568px;
   width: 568px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* including elements with key-value modifiers */
@@ -94,38 +101,82 @@ body {
   left: 64px;
 }
 
-.description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
+.techniques{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.cards{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 32px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.cards__image{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.cards__title{
+  line-height: 1.15;
+  font-size: 24px;
+}
+
+.cards__description{
+  line-height: 23px;
+  font-size: 18px;
+}
+
+.section-video{
+  padding-top: 100px;
+  text-align: center;
   min-height: 100vh;
+}
+
+.div-video{
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.video:first-child{
+  margin-right: 20px;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  text-align: start;
   width: 80%;
 }
 
-/* .two-columns__brief {
-  padding-right: 20px;
-} */
-
-.two-columns__main-text {
-  min-width: 784px;
-}
-
-.brief-paragraph {
+.two__columns-title{
   color: blue;
   line-height: 1.2;
   margin-right: 20px;
   width: 170px;
 }
 
-.main-text__paragraph {
+.two__columns-text{
+  min-width: 784px;
+}
+
+.two__columns-paragraph {
   line-height: 34px;
   font-size: 24px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  min-height: 100vh;
 }
 
 .main-text__span-accent {
@@ -177,6 +228,68 @@ body {
   font-size: 18px;
 }
 
+.oakley{
+  background-color: #f2f2f2;
+  padding-top: 160px;
+}
+
+.khan{
+  margin-top: 100px;
+  height: 100vh;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.khan__container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__container-author{
+  line-height: 42px;
+  font-size: 30px;
+}
+
+.khan__container-title{
+  margin-bottom: 60px;
+  line-height: 1.15;
+  font-size: 60px;
+}
+
+.khan__container-quote{
+  width: 790px;
+  margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.khan__container-quote-author{
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+}
+
+.khan__container-quote-subline{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__container-book__container{
+  display: flex;
+  margin-top: 68px;
+}
+
+.book__container-book-pic{
+  width: 620px;
+  height: 608px;
+}
+
+.book__container-buy-link{
+  line-height: 42px;
+  font-size: 30px;
+}
+
 .feynman {
   background-image: url(/images/feynman.png);
   background-repeat: no-repeat;
@@ -213,8 +326,9 @@ body {
   padding-top: 90px;
   text-align: center;
   background-color: #1f1f1f;
-  overflow: hidden;
   min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
 }
 
 .kaufman-table{
@@ -234,6 +348,7 @@ body {
   position: absolute;
   right: -124px;
   z-index: 0;
+  animation: rotation 9s infinite linear;
 }
 
 .kaufman-title {
@@ -261,6 +376,29 @@ body {
   right: -124px;
   top: 0;
 } */
+
+.resources{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.resources__social-icons{
+  margin: 80px auto 217px;
+  display: flex;
+  list-style: none;
+  width: 1100px;
+}
+
+.resources__social-icon{
+  width: 278px;
+  height: 38x;
+}
+
+.social-icon-image{
+  max-width: 278;
+  max-height: 38px;
+}
+
 
 .footer {
   background-color: #1f1f1f;
@@ -297,4 +435,13 @@ body {
 
 .list-title {
   margin-bottom: 20px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
