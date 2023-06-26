@@ -348,7 +348,7 @@ body {
   z-index: 1;
 }
 
-.kaufman-triange_img{
+.kaufman__image{
   position: absolute;
   right: -124px;
   z-index: 0;
@@ -398,7 +398,7 @@ body {
   height: 38px;
 }
 
-.social__icon-image{
+.social-icon{
   max-width: 278;
   max-height: 38px;
 }
@@ -437,7 +437,7 @@ body {
   margin-right: 5px;
 }
 
-.list__title {
+.list-title {
   margin-bottom: 20px;
 }
 
