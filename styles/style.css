@@ -50,7 +50,7 @@ body {
   animation: rotation 9s infinite linear;
 }
 
-.header-image {
+.header__image {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -86,7 +86,7 @@ body {
   z-index: 2;
 }
 
-.subtitle {
+.header__subtitle {
   /* position: absolute;
   bottom: 30px;
   left: 64px; */
@@ -95,7 +95,7 @@ body {
   width: 400px;
 }
 
-.header-text-content{
+.header__text-content{
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -131,13 +131,13 @@ body {
   font-size: 18px;
 }
 
-.section-video{
+.section__video{
   padding-top: 100px;
   text-align: center;
   min-height: 100vh;
 }
 
-.div-video{
+.div__video{
   margin-top: 50px;
   width: 80%;
   margin: 0 auto;
@@ -159,18 +159,18 @@ body {
   width: 80%;
 }
 
-.two__columns-title{
+.two-columns__title{
   color: blue;
   line-height: 1.2;
   margin-right: 20px;
   width: 170px;
 }
 
-.two__columns-text{
+.two-columns__text{
   min-width: 784px;
 }
 
-.two__columns-paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
 }
@@ -183,7 +183,7 @@ body {
   min-height: 100vh;
 }
 
-.main-text__span-accent {
+.paragraph__span {
   font-weight: bold;
 }
 
@@ -193,7 +193,7 @@ body {
   text-align: center;
 }
 
-.section-title {
+.section__title {
   width: 60%;
   margin: 0 auto 20px;
   line-height: 1.15;
@@ -201,7 +201,7 @@ body {
   font-weight: bold;
 }
 
-.section-subtitle {
+.section__subtitle {
   width: 60%;
   margin: 0 auto 60px;
   line-height: 34px;
@@ -222,12 +222,12 @@ body {
   margin: 0 5px 80px;
 }
 
-.cell-title {
+.cell__title {
   margin-bottom: 20px;
   line-height: 1.15;
 }
 
-.cell-text {
+.cell__text {
   line-height: 1.2;
   font-size: 18px;
 }
@@ -304,20 +304,20 @@ body {
   background-color: #f2f2f2;
 }
 
-.feynman-title {
+.feynman__title {
   line-height: 1.15;
   font-size: 102px;
   font-weight: bold;
   color: black;
 }
 
-.feynman-subtitle {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   color: black;
 }
 
-.feynman-link {
+.feynman__link {
   text-decoration: none;
   position: absolute;
   color: blue;
@@ -355,21 +355,21 @@ body {
   animation: rotation 9s infinite linear;
 }
 
-.kaufman-title {
+.kaufman__title {
   color: white;
   width: 90%;
   font-size: 42px;
 }
 
-.kaufman-subtitle {
+.kaufman__subtitle {
   color: white;
 }
 
-.kaufman-heading {
+.kaufman__heading {
   color: white;
 }
 
-.kaufman-text {
+.kaufman__text {
   color: white;
 }
 
@@ -386,19 +386,19 @@ body {
   padding-top: 100px;
 }
 
-.resources__social-icons{
+.resources-social-icons{
   margin: 80px auto 217px;
   display: flex;
   list-style: none;
   width: 1100px;
 }
 
-.resources__social-icon{
+.resources__social__icon{
   width: 278px;
   height: 38px;
 }
 
-.social-icon-image{
+.social__icon-image{
   max-width: 278;
   max-height: 38px;
 }
@@ -418,7 +418,7 @@ body {
   height: 200px;
 }
 
-.copyright-text {
+.copyright__text {
   margin: 18px 0;
 }
 
@@ -437,7 +437,7 @@ body {
   margin-right: 5px;
 }
 
-.list-title {
+.list__title {
   margin-bottom: 20px;
 }
 
