@@ -147,6 +147,10 @@ body {
   margin-right: 20px;
 }
 
+.video{
+  border: none;
+}
+
 .two-columns {
   display: flex;
   justify-content: space-between;
