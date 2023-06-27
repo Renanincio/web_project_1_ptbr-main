@@ -27,16 +27,11 @@ body {
 .header {
   height: 100vh;
   min-height: 600px;
-  /* max-height: 756px; */
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* background-image: url(/images/header-image.png);
-  background-position: bottom right;
-  background-size: 568px 568px;
-  background-repeat: no-repeat; */
-  /* parameters for the header section */
+  z-index: 1;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -56,7 +51,7 @@ body {
   right: 0;
   height: 568px;
   width: 568px;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* including elements with key-value modifiers */
@@ -87,18 +82,17 @@ body {
 }
 
 .header__subtitle {
-  /* position: absolute;
-  bottom: 30px;
-  left: 64px; */
   line-height: 25px;
   font-size: 18px;
   width: 400px;
+  z-index: 2;
 }
 
 .header__text-content{
   position: absolute;
   bottom: 30px;
   left: 64px;
+  z-index: 2;
 }
 
 .techniques{
@@ -373,14 +367,6 @@ body {
   color: white;
 }
 
-/* .kaufman-image {
-  width: 660px;
-  height: 636px;
-  position: absolute;
-  right: -124px;
-  top: 0;
-} */
-
 .resources{
   text-align: center;
   padding-top: 100px;
@@ -439,6 +425,11 @@ body {
 
 .list-title {
   margin-bottom: 20px;
+}
+
+.list-link{
+  text-decoration: none;
+  color: white;
 }
 
 @keyframes rotation {
