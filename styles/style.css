@@ -353,6 +353,7 @@ body {
   color: white;
   width: 90%;
   font-size: 42px;
+  z-index: 2;
 }
 
 .kaufman__subtitle {
